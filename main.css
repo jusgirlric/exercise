@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-image:url("images/Orange background.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover
+}
+.container{
+	margin:0 auto;
+}
+.flex-container{
+	display:flex;
+	justify-content: center;
+	align-items: stretch;
+	height:auto;
+	width: auto;
+	padding: 20px 20px 20px 20px;
+		margin: 20px 20px 20px 20px;
+	border-radius: 20px;
+    background-color: rgba(255,255,255,.50);
+	border: 2px solid darkturquoise;
+}
+.flex-container div{
+	 flex-grow:4;
+	padding: 20px 20px 20px 20px;
+}
+.flex-responsive{
+	flex-grow:1;
+}
+.navbar {
+  display: flex;
+	background-color:paleturquoise;
+	border-radius: 20px;
+	margin: 20px 20px 20px 20px;
+	}
+.navbar a{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.navbar a:link{
+	color:black;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+.navbar a:visited{
+	color: orangered;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+.navbar a:hover{
+	color:blue;
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+.navbar a:active{
+	color:white;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+header >h1{
+    text-align: center; 
+	color:aliceblue;
+	border: 2px solid rgba(255,255,255,.50);
+	border-radius: 20px;
+	padding: 15px 15px 15px 15px;
+	margin: 20px 20px 20px 20px;
+}
+header >p{
+	text-align: center;
+	padding: 15px 15px 15px 15px;
+	color:aliceblue;
+}
+.footer{
+	clear:both;
+	color: aliceblue;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin-left: 480px;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+	}
+}
